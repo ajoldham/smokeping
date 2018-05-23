@@ -1,0 +1,87 @@
+*** Targets ***
+
+probe = FPing
+
+menu = Top
+title = Network Latency Grapher
+remark = Welcome to the SmokePing. \
+         Here you will learn all about the latency of the network.
+
++ Sites
+menu = Targets
+title = Targets - Last 5 mins
+
+++ LocalMachine
+menu = localhost
+title = localhost
+host = localhost
+#alerts = someloss
+
+++ Google
+menu = google.com
+host = google.com
+
+++ Amazon
+menu = amazon.com
+host = amazon.com
+
+++ Bing
+menu = bing.com
+host = bing.com
+
+++ Facebook
+menu = facebook.com
+host = facebook.com
+
+++ Twitter
+menu = twitter.com
+host = twitter.com
+
+++ YouTube
+menu = youtube.com
+host = youtube.com
+
+++ DNS1
+menu = 8.8.8.8
+host = 8.8.8.8
+
+++ DNS2
+menu = 4.2.2.2
+host = 4.2.2.2
+
+
++ multi-targets
+menu = Multi-Targets
+title = Multi-Targets - Last 5 mins
+
+    ++ multi-targets1
+    menu = Web Sites
+    title = Google, Amazon, Bing, Facebook, Twitter, YouTube
+    host = /Sites/Google /Sites/Amazon /Sites/Bing /Sites/Facebook /Sites/Twitter /Sites/YouTube
+
+    ++ multi-targets2
+    menu = DNS Sites
+    title = DNS Sites
+    host = /Sites/DNS1 /Sites/DNS2
+
+#+ speedtest
+#menu = Speedtest.net
+#title = Speedtest.net probes
+
+#++ speedtest-download
+#menu = speedtest download
+#title = speedtest download
+#probe = speedtest-download
+## New York Server
+#server = 7170
+#measurement = download
+#host = dummy.com
+
+#++ speedtest-upload
+#menu = speedtest upload
+#title = speedtest upload
+#probe = speedtest-upload
+## New York Server
+#server = 7170
+#measurement = upload
+#host = dummy.com

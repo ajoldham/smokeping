@@ -1,0 +1,11 @@
+version: '2'
+services:
+    SmokePing:
+        image: smokeping
+        ports:
+            - '8888:80'
+        volumes:
+            - "./config:/etc/smokeping/config.d:ro"
+            - "./logdata:/var/lib/smokeping:rw"
+        environment:
+            - TZ=PST8PDT

@@ -1,0 +1,31 @@
+*** Probes ***
+
++ FPing
+binary = /usr/bin/fping
+
++ EchoPingHttp
+binary = /usr/bin/echoping
+
++ EchoPingHttps
+binary = /usr/bin/echoping
+
+
++ Curl
+binary = /usr/bin/curl
+offset = random
+pings = 5
+urlformat = http://%host%/
+
+
++ speedtest
+binary = /usr/local/bin/speedtest-cli
+timeout = 300
+step = 300
+offset = random
+pings = 3
+
+++ speedtest-download
+measurement = download
+
+++ speedtest-upload
+measurement = upload

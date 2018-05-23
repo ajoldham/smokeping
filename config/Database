@@ -1,0 +1,19 @@
+*** Database ***
+
+# Pings every 3 seconds is the minimum setting currently allowed.
+pings = 3
+step = 5
+
+#step     = 300
+#pings    = 20
+
+# consfn mrhb steps total
+
+AVERAGE  0.5   1  1008
+AVERAGE  0.5  12  4320
+    MIN  0.5  12  4320
+    MAX  0.5  12  4320
+AVERAGE  0.5 144   720
+    MAX  0.5 144   720
+    MIN  0.5 144   720
+
