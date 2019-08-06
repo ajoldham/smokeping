@@ -2,6 +2,7 @@ version: '2'
 services:
     SmokePing:
         image: smokeping
+        container_name: smokeping
         ports:
             - '8888:80'
         volumes:
@@ -9,3 +10,6 @@ services:
             - "./logdata:/var/lib/smokeping:rw"
         environment:
             - TZ=PST8PDT
+
+        ### Allows to auto-start with Docker
+        restart: always
